@@ -18,7 +18,7 @@ similarity matrix $S \in \mathbb{R}^{n\times n}$ between the data points is defi
 as
 
 $$
-    s_{ij} = \mathrm{max} \left( s_i(j), s_j(i)\right) \; \mathrm{with} \;
+    s_{ij} = \mathrm{max} \left( s_i(j), s_j(i)\right),   \mathrm{with}   
     s_i(j) = \mathrm{exp} \left(-4 \frac{\|x_i - x_j \|^2}{\sigma_i^2} \right)
 $$
 
