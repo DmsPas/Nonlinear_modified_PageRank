@@ -3,8 +3,8 @@
 This repository contains the official code for the paper "*Nonlinear modified PageRank problem for local graph partitioning*", available online at [ARXIV link](https://arxiv.org/).
 
 <p align="center">
-  <img src="Visualization/Gauss8_nodes.png"  alt="Initial data" width="350"/>
-  <img src="Visualization/Gauss_Clusters_re.png" alt="p Clusters" width="350"/>
+  <img src="src/Visualization/Gauss8_nodes.png"  alt="Initial data" width="350"/>
+  <img src="src/Visualization/Gauss_Clusters_re.png" alt="p Clusters" width="350"/>
 </p>
 <center>
 In this work, we developed a new method for local graph partitioning based on a nonlinear generalisation of the PageRank problem involving the Moore-Penrose inverse of the incidence matrix. The Levenberg-Marquardt method is used with a full rank Jacobian variant to obtain a numerical solution to the generalised problem. Sets of vertices are formed according to the ranking supplied by the solution, and a conductance criterion decides upon the set that best represents the local cluster around a starting vertex. Experiments on both synthetic and real-world inspired graphs demonstrate the capability of the approach to not only produce low conductance sets, but to also recover local clusters with an accuracy that consistently surpasses state-of-the-art algorithms.
@@ -80,7 +80,7 @@ Our approach is using elements from the following publications:
 ### Citation
 
 ```
-@article{CoPa2024,
+@article{KoPa2024,
 author={Kodsi, C. and Pasadakis, D.},
 title={Nonlinear modified {PageRank} problem for local graph partitioning},
 year      = {2024},
