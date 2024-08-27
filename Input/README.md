@@ -16,10 +16,12 @@ the connectivity matrix $G \in \mathbb{R}^{n\times n}$ is created from a k neare
 neighbors routine, with k set such that the resulting graph is connected. The
 similarity matrix $S \in \mathbb{R}^{n\times n}$ between the data points is defined
 as
+
 $$
-    s_{ij} = \max\{s_i(j), s_j(i)\} \;\; \text{with}\;
-    s_i(j) = \exp (-4 \frac{\|x_i - x_j \|^2}{\sigma_i^2} )
+    s_{ij} = \mathrm{max} \{s_i(j), s_j(i)\} \;\; \text{with}\;
+    s_i(j) = \mathrm{exp} (-4 \frac{\|x_i - x_j \|^2}{\sigma_i^2} )
 $$
+
 with $\sigma_i$ standing for the Euclidean distance between the $i$th data point
 and its nearest k-nearest neighbor. The adjacency matrix $W$ is then created
 as
