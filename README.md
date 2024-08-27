@@ -15,9 +15,10 @@ In this work, we developed a new method for local graph partitioning based on a 
 ### Motivation & contributions
 
 This work takes the system of linear equations that forms the PageRank problem as the starting point in the construction of a local clustering algorithm. Only clusters around a
-single vertex are considered. we study a modification to the PageRank problem, and the theoretical motivation for a nonlinear generalisation involving the p-norm. The Moore-Penrose inverse of the incidence matrix plays a very important role in this generalisation, that can reduce to a system of linear equations closely resembling the original modified PageRank problem. However, this is dependent on a number of conditions, with a major one being that the number of vertices approaches infinity. Additionally, an insight into the effect of the generalised problem on the cluster criterion based on an infinitesimal perturbation argument is offered. The Levenberg-Marquardt method with a full rank Jacobian variant is employed for obtaining a numerical solution to the generalised problem.
+single vertex are considered. we study a modification to the PageRank problem, and the theoretical motivation for a nonlinear generalisation involving the p-norm. The Moore-Penrose inverse of the incidence matrix plays a very important role in this generalisation, that can reduce to a system of linear equations closely resembling the original modified PageRank problem. Additionally, an insight into the effect of the generalised problem on the cluster criterion based on an infinitesimal perturbation argument is offered. The Levenberg-Marquardt method with a full rank Jacobian variant is employed for obtaining a numerical solution to the generalised problem.
   
-### Requirements
+### Requirement
+
 Our code uses and adapts the Levenberg-Marquardt implementation from [immoptibox](http://www2.imm.dtu.dk/projects/immoptibox/).
 The necessary paths are included in the script [`addpaths_NPR.m`](src/addpaths_NPR.m). The code has been tested in Mac and Ubuntu distributions. All the algorithms are implemented in MATLAB R2021b. 
 
