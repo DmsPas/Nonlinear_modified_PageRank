@@ -65,7 +65,7 @@ gx.LongitudeAxis.TickLabels = {};
 gx.LatitudeLabel.String = '';
 gx.LongitudeLabel.String = '';
 grid off;
-set(get(gca, 'Title'), 'String', '\textbf{Seed  node: Constantinoupolis}', 'Interpreter', 'Latex','Fontsize',24);
+set(get(gca, 'Title'), 'String', '\textbf{Seed  node: Constantinopolis}', 'Interpreter', 'Latex','Fontsize',24);
 geolimits([34.533712,48.144098],[21.740038, 42.960080]);
 print('NPR_Orbis_Const','-dpng','-r200')
 

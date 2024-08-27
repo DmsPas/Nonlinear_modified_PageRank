@@ -3,7 +3,7 @@
 This repository contains the official code for the paper "*Nonlinear modified PageRank problem for local graph partitioning*", available online at [ARXIV link](https://arxiv.org/).
 
 <p align="center">
-  <img src="src/Visualization/Gauss8_nodes.png"  alt="Initial data" width="350"/>
+  <img src="src/Visualization/Gauss8_nodes.png"  alt="Initial data" width="302"/>
   <img src="src/Visualization/Gauss_Clusters_re.png" alt="p Clusters" width="350"/>
 </p>
 <center>
@@ -49,7 +49,13 @@ num_trials           = 10;      % number of different seed nodes
 norm_Lap             = 2;       % 0/1/2 for combinatorial/norm. symmetric/random walk Laplacian
 write_output_to_file = false;   % write output to file
 ```
-**Output**: The output is printed in the command window for each case under question, or saved to a file if ``write_output_to_file = true``. It includes the index of the seed node (s_node), the value of p at which the best partitioning was found (best_p), the values of the best conductance (RCCut) and F-score, and the elapsed time in sec. of the NPR algorithm per srating node. Mean results are then displayed with standard deviation based on all the seed vertices.
+**Output**: The output is printed in the command window for each case under question, or saved to a file if ``write_output_to_file = true``. It includes the index of the seed node (s_node), the value of p at which the best partitioning was found (best_p), the values of the best conductance (RCCut) and F-score, and the elapsed time in sec. of the NPR algorithm per srating node. Mean results are then displayed with standard deviation based on all the seed vertices. The ORBIS experiments have additional visual output, illustrating the classification of the Roman settlements on the map. An example is offered below.
+
+<p align="center">
+  <img src="src/Visualization/NPR_Orbis_Const_Km.png"  alt="Initial data" width="250"/>
+  <img src="src/Visualization/NPR_Orbis_Lond_Km.png" alt="p Clusters" width="250"/>
+  <img src="src/Visualization/NPR_Orbis_Roma_Km.png" alt="p Clusters" width="250"/>
+</p>
 
 #### Code Structure
 
@@ -66,15 +72,9 @@ The structure of the files in this repository is as follows:
 
 Further details are documented within the code.
 
-
 ### Maintainers
 - [Dimosthenis Pasadakis](https://dmspas.github.io/) ([dimosthenis.pasadakis@usi.ch](mailto:dimosthenis.pasadakis@usi.ch))
 - [Costy Kodsi](https://vbn.aau.dk/da/persons/costyk) ([costyk@math.aau.dk](mailto:costyk@math.aau.dk))
-
-<!-- ### Acknowledgements
-Our approach is using elements from the following publications:
-1. Bühler T, Hein M (2009) Spectral clustering based on the graph p-Laplacian. In: Proceedings of the 26th Annual International Conference on Machine Learning, ACM, New York, NY, USA, ICML '09.
-2. Huang W, Absil PA, Gallivan KA, Hand P (2018) Roptlib: An object-oriented c++ library for optimization on riemannian manifolds. ACM Trans Math Softw 44(4). -->
 
 
 ### Citation
