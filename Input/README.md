@@ -18,11 +18,11 @@ similarity matrix $S \in \mathbb{R}^{n\times n}$ between the data points is defi
 as
 
 $$
-    s_{ij} = \mathrm{max} \{s_i(j), s_j(i)\} \;\; \text{with}\;
+    s_{ij} = \mathrm{max} \left\{s_i(j), s_j(i)\right\} \; \mathrm{with} \;
     s_i(j) = \mathrm{exp} (-4 \frac{\|x_i - x_j \|^2}{\sigma_i^2} )
 $$
 
-with $\sigma_i$ standing for the Euclidean distance between the $i$th data point
+with $\sigma_i$ standing for the Euclidean distance between the $i$-th data point
 and its nearest k-nearest neighbor. The adjacency matrix $W$ is then created
 as
 
