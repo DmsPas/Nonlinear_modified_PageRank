@@ -19,7 +19,7 @@ single vertex are considered. we study a modification to the PageRank problem, a
   
 ### Requirements
 Our code uses and adapts the Levenberg-Marquardt implementation from [immoptibox](http://www2.imm.dtu.dk/projects/immoptibox/).
-The necessary paths are included in the script [addpaths_NPR.m](src/addpath_NPR.m). The code has been tested in Mac and Ubuntu distributions. All the algorithms are implemented in MATLAB R2021b. 
+The necessary paths are included in the script [addpaths_NPR.m](src/addpath_NPR.m). The code has been tested in Mac and Ubuntu distributions. All the algorithms are implemented in MATLAB R2023a. 
 
 ### Input data
 The complete list of the datasets used in this study can be found in this [permalink](https://drive.switch.ch/index.php/s/PEnKOcOYEWUILap). A small subset of this data is stored in [`Input/`](Input/).
