@@ -7,7 +7,7 @@ The adjacency matrices in this folder were used in the numerical experiments in:
 Costy Kodsi and Dimosthenis  Pasadakis,  "Nonlinear modified PageRank problem
 for local graph partitioning," 2024.  
 
-The full list of datasets used can be found at [permalink](https://drive.switch.ch/index.php/s/PEnKOcOYEWUILap).
+The full list of datasets used can be found in this [permalink](https://drive.switch.ch/index.php/s/PEnKOcOYEWUILap).
 
 ### Graph creation
 
