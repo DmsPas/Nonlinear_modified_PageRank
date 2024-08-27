@@ -53,9 +53,9 @@ write_output_to_file = false;   % write output to file
 
 <p align="center">
   <div style="display: flex; justify-content: center;">
-    <img src="src/Visualization/NPR_Orbis_Const_Km.png" alt="Const clusters" width="200" style="margin: 0 5px;"/>
-    <img src="src/Visualization/NPR_Orbis_Lond_Km.png" alt="Lond clusters" width="200" style="margin: 0 5px;"/>
-    <img src="src/Visualization/NPR_Orbis_Roma_Km.png" alt="Roma clusters" width="200" style="margin: 0 5px;"/>
+    <img src="src/Visualization/NPR_Orbis_Const_Km.png" alt="Const clusters" width="240" style="margin: 0 5px;"/>
+    <img src="src/Visualization/NPR_Orbis_Lond_Km.png" alt="Lond clusters" width="240" style="margin: 0 5px;"/>
+    <img src="src/Visualization/NPR_Orbis_Roma_Km.png" alt="Roma clusters" width="240" style="margin: 0 5px;"/>
   </div>
 </p>
 
