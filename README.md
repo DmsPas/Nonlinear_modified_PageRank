@@ -52,9 +52,9 @@ write_output_to_file = false;   % write output to file
 **Output**: The output is printed in the command window for each case under question, or saved to a file if ``write_output_to_file = true``. It includes the index of the seed node (s_node), the value of p at which the best partitioning was found (best_p), the values of the best conductance (RCCut) and F-score, and the elapsed time in sec. of the NPR algorithm per srating node. Mean results are then displayed with standard deviation based on all the seed vertices. The ORBIS experiments have additional visual output, illustrating the classification of the Roman settlements on the map. An example is offered below.
 
 <p align="center">
-  <img src="src/Visualization/NPR_Orbis_Const_Km.png"  alt="Const clusters" width="280"/>
-  <img src="src/Visualization/NPR_Orbis_Lond_Km.png" alt="Lond clusters" width="280"/>
-  <img src="src/Visualization/NPR_Orbis_Roma_Km.png" alt="Roma clusters" width="280"/>
+  <img src="src/Visualization/NPR_Orbis_Const_Km.png"  alt="Const clusters" width="280" style="display: inline-block;"/>
+  <img src="src/Visualization/NPR_Orbis_Lond_Km.png" alt="Lond clusters" width="280" style="display: inline-block;"/>
+  <img src="src/Visualization/NPR_Orbis_Roma_Km.png" alt="Roma clusters" width="280" style="display: inline-block;"/>
 </p>
 
 #### Code Structure
