@@ -19,7 +19,7 @@ single vertex are considered. we study a modification to the PageRank problem, a
   
 ### Requirements
 Our code uses and adapts the Levenberg-Marquardt implementation from [immoptibox](http://www2.imm.dtu.dk/projects/immoptibox/).
-The necessary paths are included in the script [addpaths_NPR.m](src/addpath_NPR.m). The code has been tested in Mac and Ubuntu distributions. All the algorithms are implemented in MATLAB R2023a. 
+The necessary paths are included in the script [addpaths_NPR.m](src/addpath_NPR.m). The code has been tested in Mac and Ubuntu distributions. All the algorithms are implemented in MATLAB R2021b. 
 
 ### Input data
 The complete list of the datasets used in this study can be found in this [permalink](https://drive.switch.ch/index.php/s/PEnKOcOYEWUILap). A small subset of this data is stored in [`Input/`](Input/).
@@ -39,14 +39,17 @@ or
 >> Benchmark_NPR_Orbis
 ```
 
-The following parameters (Lines 98 - 102) control important features of the algorithm:
+The following parameters (Lines 30 - 38) control important features of the algorithm:
 ```
-p_final      = 1.100; % final value of p
-factor       = .9;    % factor of p-reduction (only if use_p_contin == 0)
-normalized   = 1;     % 1/0 normalized/unnormalized p-clustering
-use_p_contin = 1;     % 1/0 use pseudo-continuation for the reduction of p
+print_level          = 2;     % 0/1/2 for no print/low/high verbosity
+p_levels             = [1.95; 1.9; 1.8; 1.7; 1.6; 1.5; 1.45]; % levels of p
+% β = (1 - α)/α, where α is the teleportation constant
+beta               = 0.01;      % for majority of cases
+num_trials           = 10;      % number of different seed nodes
+norm_Lap             = 2;       % 0/1/2 for combinatorial/norm. symmetric/random walk Laplacian
+write_output_to_file = false;   % write output to file
 ```
-**Output**: The output is printed in the command window for each case under question, or saved to a file if ``write_output_to_file = true`` (Line XX). It includes the index of the seed node (s_node), the value of p at which the best partitioning was found (best_p), the values of the best conductance (RCCut) and F-score, and the elapsed time in sec. of the NPR algorithm per srating node. Mean results are then displayed with standard deviation based on all the seed vertices.
+**Output**: The output is printed in the command window for each case under question, or saved to a file if ``write_output_to_file = true``. It includes the index of the seed node (s_node), the value of p at which the best partitioning was found (best_p), the values of the best conductance (RCCut) and F-score, and the elapsed time in sec. of the NPR algorithm per srating node. Mean results are then displayed with standard deviation based on all the seed vertices.
 
 #### Code Structure
 
