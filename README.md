@@ -1,6 +1,6 @@
 ## Nonlinear modified PageRank problem for local graph partitioning
 
-This repository contains the official code for the paper "*Nonlinear modified PageRank problem for local graph partitioning*", available online at [ARXIV link](https://arxiv.org/).
+This repository contains the official code for the paper "*Nonlinear modified PageRank problem for local graph partitioning*", available online at [arXiv link](https://arxiv.org/abs/2409.01834).
 
 <p align="center">
   <img src="src/Visualization/Gauss8_nodes.png"  alt="Initial data" width="302"/>
@@ -45,7 +45,7 @@ The following parameters (Lines 30 - 38) control important features of the algor
 print_level          = 2;     % 0/1/2 for no print/low/high verbosity
 p_levels             = [1.95; 1.9; 1.8; 1.7; 1.6; 1.5; 1.45]; % levels of p
 % β = (1 - α)/α, where α is the teleportation constant
-beta               = 0.01;      % for majority of cases
+beta                 = 0.01;      % for majority of cases
 num_trials           = 10;      % number of different seed nodes
 norm_Lap             = 2;       % 0/1/2 for combinatorial/norm. symmetric/random walk Laplacian
 write_output_to_file = false;   % write output to file
@@ -81,15 +81,13 @@ Further details are documented within the code.
 ### Citation
 
 ```
-@article{KoPa2024,
-author={Kodsi, C. and Pasadakis, D.},
-title={Nonlinear modified {PageRank} problem for local graph partitioning},
-year      = {2024},
-journal   = {arXiv},
-volume    = {XXX},
-eprint    = {XXX},
-primaryClass = {XXX},
-archivePrefix = {arXiv},
-url       = {https://arxiv.org/XXX}
+@misc{KoPa2024,
+      title={Nonlinear Modified PageRank Problem for Local Graph Partitioning}, 
+      author={Costy Kodsi and Dimosthenis Pasadakis},
+      year={2024},
+      eprint={2409.01834},
+      archivePrefix={arXiv},
+      primaryClass={math.NA},
+      url={https://arxiv.org/abs/2409.01834}, 
 }
 ```
