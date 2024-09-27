@@ -15,7 +15,7 @@ In this work, we developed a new method for local graph partitioning based on a 
 ### Motivation & contributions
 
 This work takes the system of linear equations that forms the PageRank problem as the starting point in the construction of a local clustering algorithm. Only clusters around a
-single vertex are considered. we study a modification to the PageRank problem, and the theoretical motivation for a nonlinear generalisation involving the p-norm. The Moore-Penrose inverse of the incidence matrix plays a very important role in this generalisation, that can reduce to a system of linear equations closely resembling the original modified PageRank problem. Additionally, an insight into the effect of the generalised problem on the cluster criterion based on an infinitesimal perturbation argument is offered. The Levenberg-Marquardt method with a full rank Jacobian variant is employed for obtaining a numerical solution to the generalised problem.
+single vertex are considered. We study a modification to the PageRank problem, and the theoretical motivation for a nonlinear generalisation involving the p-norm. The Moore-Penrose inverse of the incidence matrix plays a very important role in this generalisation, which can reduce to a system of linear equations closely resembling the original modified PageRank problem. Additionally, an insight into the effect of the generalised problem on the cluster criterion based on an infinitesimal perturbation argument is offered. The Levenberg-Marquardt method with a full rank Jacobian variant is suggested for obtaining a numerical solution to the generalised problem.
   
 ### Requirement
 
@@ -23,11 +23,11 @@ Our code uses and adapts the Levenberg-Marquardt implementation from [immoptibox
 The necessary paths are included in the script [`addpaths_NPR.m`](src/addpaths_NPR.m). The code has been tested in Mac and Ubuntu distributions. All the algorithms are implemented in MATLAB R2021b. 
 
 ### Input data
-The complete list of the datasets used in this study can be found in this [permalink](https://drive.switch.ch/index.php/s/PEnKOcOYEWUILap). A small subset of this data is stored in [`Input/`](Input/).
+The complete list of datasets used in this study can be found at this [permalink](https://drive.switch.ch/index.php/s/PEnKOcOYEWUILap). A small subset of this data is stored in [`Input/`](Input/).
 
 ### Usage
 
-The main script [`Benchmark_NPR.m`](src/Benchmark_NPR.m) runs the experiments on the input data. For the [ORBIS](https://orbis.stanford.edu/) real-world experiment use the script [`Benchmark_NPR_Orbis.m`](src/Benchmark_NPR_Orbis.m).
+The main script [`Benchmark_NPR.m`](src/Benchmark_NPR.m) runs the experiments on the input data. For the [ORBIS](https://orbis.stanford.edu/) real-world experiment, use the script [`Benchmark_NPR_Orbis.m`](src/Benchmark_NPR_Orbis.m).
 
 **Run**: To perform local graph clustering on the available input data include the desired dataset in ``cases{}`` (Line 16), and type in the matlab command line
 ```
@@ -50,7 +50,7 @@ num_trials           = 10;      % number of different seed nodes
 norm_Lap             = 2;       % 0/1/2 for combinatorial/norm. symmetric/random walk Laplacian
 write_output_to_file = false;   % write output to file
 ```
-**Output**: The output is printed in the command window for each case under question, or saved to a file if ``write_output_to_file = true``. It includes the index of the seed node (s_node), the value of p at which the best partitioning was found (best_p), the values of the best conductance (RCCut) and F-score, and the elapsed time in sec. of the NPR algorithm per srating node. Mean results are then displayed with standard deviation based on all the seed vertices. The ORBIS experiments have additional visual output, illustrating the classification of the Roman settlements on the map. An example is offered below.
+**Output**: The output is printed in the command window for each case under question, or saved to a file if ``write_output_to_file = true``. It includes the index of the seed node (s_node), the value of p at which the best partitioning was found (best_p), the values of the best conductance (RCCut) and F-score, and the elapsed time in seconds of the NPR algorithm per starting node. Mean results are then displayed with standard deviation based on all the seed nodes. The ORBIS experiments have additional visual output, illustrating the classification of the Roman settlements on the map. An example is offered below.
 
 <p align="center" style="white-space: nowrap;">
   <img src="src/Visualization/NPR_Orbis_Const_Km.png" alt="Const clusters" width="250" style="display: inline-block;"/>
@@ -71,7 +71,7 @@ The structure of the files in this repository is as follows:
 ├── src/Visualization           # graph visualization code and some figures
 ```
 
-Further details are documented within the code.
+Further details can be found within the code.
 
 ### Maintainers
 - [Dimosthenis Pasadakis](https://dmspas.github.io/) ([dimosthenis.pasadakis@usi.ch](mailto:dimosthenis.pasadakis@usi.ch))
