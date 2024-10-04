@@ -15,8 +15,8 @@ addpaths_NPR;
 cases = {
 % % Synthetic LFR graphs
 'LFR_10.mat';
-% 'LFR_12.mat';
-% 'LFR_14.mat';
+'LFR_12.mat';
+'LFR_14.mat';
 % % Synthetic Gauss graphs
 % 'Gauss2_55_10NN';
 % 'Gauss5_55_10NN';

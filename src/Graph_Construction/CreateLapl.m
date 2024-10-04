@@ -31,7 +31,7 @@ elseif normalized == 1
     L      = VWsqrt*(spdiags(vw,0,NumNodes,NumNodes)-W)*VWsqrt;
 elseif normalized == 2
     % transition probability matrix     
-    P =  sparse(Diag^(-1) * W);
+    P =  sparse(W * Diag^(-1));
     % random walk Laplacian
     L = (speye([n n]) -  P);
 end
