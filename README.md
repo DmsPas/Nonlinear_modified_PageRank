@@ -1,6 +1,6 @@
-## Nonlinear modified PageRank problem for local graph partitioning
+## Nonlinear PageRank Problem for Local Graph Partitioning
 
-This repository contains the official code for the paper "*Nonlinear modified PageRank problem for local graph partitioning*", available online at [arXiv](https://arxiv.org/abs/2409.01834).
+This repository contains the official code for the paper "*Nonlinear PageRank Problem for Local Graph Partitioning*", available online at [arXiv](https://arxiv.org/abs/2409.01834).
 
 <p align="center">
   <img src="src/Visualization/Gauss8_nodes.png"  alt="Initial data" width="302"/>
