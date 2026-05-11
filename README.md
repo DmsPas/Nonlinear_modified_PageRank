@@ -75,7 +75,7 @@ Further details can be found within the code.
 
 ### Maintainers
 - [Dimosthenis Pasadakis](https://dmspas.github.io/) ([dimosthenis.pasadakis@usi.ch](mailto:dimosthenis.pasadakis@usi.ch))
-- [Costy Kodsi](https://vbn.aau.dk/da/persons/costyk) ([costyk@math.aau.dk](mailto:costyk@math.aau.dk))
+- [Costy Kodsi](https://costykodsi.github.io/) ([costakodsi@gmail.com](mailto:costakodsi@gmail.com))
 
 
 ### Citation
