@@ -156,14 +156,10 @@ for orig_ID = 1:nc
             % find the furthest node from start_node
             Gr    = graph(W);
             Dist  = distances(Gr,start_node);
-            if isrow(Dist)
-                % Dist is a 1xn vector, from the single source start_node
-                [~,vrt_max] = max(Dist(:));
-            else
-                % If Dist was a matrix compute as follows
-                [~,vrt_idx] = max(Dist(:));
-                [vrt_max,~] = ind2sub([n_nodes n_nodes],vrt_idx);
-            end
+            % Dist is a 1xn 
+            [~,vrt_max] = max(Dist(:));
+            % [~,vrt_idx] = max(Dist(:));
+            % [vrt_max,~] = ind2sub([n_nodes n_nodes],vrt_idx);
             fprintf('Furthest geodesic node id:%d\n',vrt_max);
         end
 

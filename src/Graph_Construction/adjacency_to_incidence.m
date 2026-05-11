@@ -3,7 +3,7 @@ function [A] = adjacency_to_incidence(T)
 % Input
 % T             : the adjacency matrix (n_nodes x n_nodes)
 % Output
-% A             : the incidence matrix (n_edges x n_edges)
+% A             : the incidence matrix (n_edges x n_nodes)
 
 
 [adj_rows,adj_cols,~] = find(T);

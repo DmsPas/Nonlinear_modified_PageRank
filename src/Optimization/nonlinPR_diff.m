@@ -33,9 +33,11 @@ end
 Bx_q = (epsilon+abs(Bx).^2).^q_half;
 
 
+% func = N*(Bx_q.*(epsilon + Bx)) - s; % only if you want to perturb the
+% objective as well
+
 % The full objective
-% func = N*(Bx_q.*(ε +Bx)) - s;
-func = N*(Bx_q.*(epsilon + Bx)) - s;
+func = N*(Bx_q.*Bx) - s;
 
 % Power |Bx|^r
 r = p_curr - 4;

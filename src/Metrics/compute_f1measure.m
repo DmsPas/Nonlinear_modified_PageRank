@@ -1,19 +1,19 @@
-function [f1] = compute_f1measure(cluster1, cluster2)
+function [f1] = compute_f1measure(cluster_comp, cluster_gt)
 % Compute the F1-score between two clusters
 % Input:
-%  cluster1: ground truth cluster
-%  cluster2: computed cluster
+%  cluster_comp: computed cluster 
+%  cluster_gt: ground truth cluster
 % Output:
 % f1: F1-score
 
 
 f1 = 0;
 
-for i = 1:size(cluster2, 1)
+for i = 1:size(cluster_gt, 1)
 
-    precison = size(intersect(cluster2(i,:), cluster1),2) /size(cluster1,2);
+    precison = size(intersect(cluster_gt(i,:), cluster_comp),2) /size(cluster_comp,2);
 
-    recall = size(intersect(cluster2(i,:), cluster1),2) /size(cluster2(i,:),2);
+    recall = size(intersect(cluster_gt(i,:), cluster_comp),2) /size(cluster_gt(i,:),2);
 
     if precison == 0 && recall == 0
 
