@@ -1,6 +1,6 @@
 % Main execution script for the paper
 %
-% "Nonlinear Modified PageRank Problem for Local Graph Partitioning",
+% "Nonlinear PageRank Problem for Local Graph Partitioning",
 % by Costy Kodsi and Dimosthenis Pasadakis.
 %
 % available online at https://arxiv.org/abs/2409.01834.
@@ -28,7 +28,7 @@ fprintf('|               Nonlinear modified Pagerank          |\n');
 fprintf('|                                                    |\n');
 fprintf('@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@\n\n\n');
 %% Parameters
-print_level          = 2;     % 0/1/2 for no print/low/high verbosity
+print_level          = 0;     % 0/1/2 for no print/low/high verbosity
 p_levels             = [1.95; 1.9; 1.8; 1.7; 1.6; 1.5; 1.45]; % levels of p
 % beta = (1 - teleportation constant)/teleportation constant
 beta               = 0.01;      % for the LFR cases
